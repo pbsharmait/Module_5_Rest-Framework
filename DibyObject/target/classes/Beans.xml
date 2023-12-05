@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="phone" class="com.spring.DibyObject.Phone">
+<property name="pno" value="9530011544"/>
+</bean>
+<bean id="person" class="com.spring.DibyObject.Person">
+<property name="pname" value="Prabha"/>
+<property name="phone" ref="phone"/>
+</bean>
+</beans>
